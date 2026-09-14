@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FloorSight | Farframe RFID Material Visibility</title>
+  <meta name="description" content="Explore FloorSight's proposed RFID-assisted material location system, architecture and focused warehouse pilot.">
+  <meta name="theme-color" content="#19212A">
+  <link rel="canonical" href="https://farframe.ca/products/floorsight/">
+  <link rel="icon" href="/assets/brand/farframe-favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+<link rel="stylesheet" href="/assets/css/demo.css?v=20260914-1">
+</head>
+<body class="ff-demo">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="Farframe home">
+      <img class="brand-symbol" src="/assets/brand/farframe-symbol.svg" width="28" height="24" alt="">
+      <img class="brand-wordmark" src="/assets/brand/farframe-wordmark.svg" width="112" height="13" alt="">
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="/products/" aria-current="page">Products</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a class="btn btn--primary btn--header" href="/contact/">Discuss an Operational Challenge</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobile-navigation" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" data-open="false" aria-hidden="true">
+  <a href="/products/" aria-current="page">Products</a>
+  <a href="/about/">About</a>
+  <a href="/contact/">Contact</a>
+  <a class="btn btn--primary" href="/contact/">Discuss an Operational Challenge</a>
+</nav>
+<main id="main"><section class="demo-intro"><div class="wrap"><div class="eyebrow mono">MATERIAL VISIBILITY / PROPOSED SYSTEM</div><h1>FloorSight</h1><p class="demo-description">A clearer starting point for finding materials.</p><p class="lead">A proposed RFID-assisted system connecting tagged parts, pallets and containers with a part-number search interface. Designed to help reduce search time and unnecessary warehouse travel.</p><div class="page-actions"><a class="btn btn--primary" href="#floorsight">Explore the concept</a><a class="btn btn--secondary" href="/contact/?objective=inventory">Discuss a pilot</a></div></div></section><section class="demo-section demo-concept" id="floorsight" aria-labelledby="floorsight-title">
+<div class="wrap">
+<span class="demo-badge demo-badge--concept">PROPOSED SYSTEM / CONCEPT STAGE</span>
+<h2 id="floorsight-title">Proposed architecture &amp; pilot</h2>
+<p class="demo-description">A proposed RFID-assisted search workflow for parts, pallets and material containers.</p>
+<p class="demo-body">Search a part number, check its last detected zone and use a forklift-mounted or handheld reader to help identify the selected tagged material nearby. The goal is less search time and unnecessary travel.</p>
+<figure class="demo-blueprint">
+<img src="/assets/media/floorsight-blueprint.svg" width="1000" height="740" loading="lazy" alt="Proposed FloorSight architecture: registered RFID tags are observed by forklift or handheld readers. A reader interface passes observations to detection processing. Registration records and a separate zone reference feed a local database. The operator searches that database by part number and verifies the material.">
+<figcaption>Proposed architecture. A moving reader needs a separate location reference before its detections can be assigned to warehouse zones.</figcaption>
+</figure>
+<div class="demo-pilot">
+<div><h3>A focused first pilot</h3><p>One warehouse area, representative materials and one reader configuration. Establish baseline search times before evaluating improvement.</p></div>
+<div><h3>What to measure</h3><p>Search time, detection reliability, correct material identification and operator usability.</p></div>
+<div><h3>What remains to validate</h3><p>Tag placement, performance around metal, reader coverage and zone assignment. Last detected location does not confirm current position.</p></div>
+</div>
+<p class="demo-caption">FloorSight is a proposed design, not a demonstrated hardware system. Continuous warehouse-wide tracking and exact positioning are not established capabilities.</p>
+<div class="page-actions"><a class="btn btn--primary" href="/contact/?objective=inventory">Discuss a FloorSight pilot</a><a class="btn btn--secondary" href="/assets/media/floorsight-blueprint.svg" download="FloorSight_Proposed_Architecture.svg">Download architecture</a></div>
+</div>
+</section></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-main">
+      <div class="footer-identity">
+        <a class="footer-brand" href="/" aria-label="Farframe home">
+          <img class="footer-symbol" src="/assets/brand/farframe-symbol-reversed.svg" width="27" height="23" alt="">
+          <img class="footer-wordmark" src="/assets/brand/farframe-wordmark-reversed.svg" width="108" height="12" alt="">
+        </a>
+        <div class="footer-tagline">Engineered for Impact.</div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/products/">Products</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+    <div class="footer-legal">Farframe Inc. · Ontario, Canada · © 2026 Farframe Inc.</div>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

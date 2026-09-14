@@ -14,3 +14,39 @@
   from = "/home"
   to = "/"
   status = 301
+
+[[redirects]]
+  from = "/products/docuexcel"
+  to = "/products/docuforge/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/docuexcel/"
+  to = "/products/docuforge/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/docuexcel/index.html"
+  to = "/products/docuforge/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/inventory-sentinel"
+  to = "/products/floorsight/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/inventory-sentinel/"
+  to = "/products/floorsight/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/inventory-sentinel/index.html"
+  to = "/products/floorsight/"
+  status = 301
+  force = true
