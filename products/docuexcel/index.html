@@ -1,617 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>DocuForge | Farframe Document Intelligence</title>
-
-  <meta
-    name="description"
-    content="DocuForge transforms invoices into structured, reviewable business data through document extraction, human review, purchasing checks and Excel output."
-  >
-
-  <meta name="theme-color" content="#19212A">
-
-  <link
-    rel="canonical"
-    href="https://farframe.ca/products/docuexcel/"
-  >
-
-  <link
-    rel="icon"
-    href="/assets/brand/farframe-favicon.svg"
-    type="image/svg+xml"
-  >
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="/assets/css/styles.css">
-
-  <style>
-    /* Page-specific sizing: prevent wide content from expanding the layout. */
-    .docuforge-page,
-    .docuforge-page *,
-    .docuforge-page *::before,
-    .docuforge-page *::after {
-      box-sizing: border-box;
-    }
-
-    .docuforge-page {
-      margin: 0;
-      min-width: 0;
-    }
-
-    .docuforge-page main {
-      display: block;
-      width: 100%;
-      min-width: 0;
-    }
-
-    .docuforge-page .wrap {
-      width: calc(100% - 48px);
-      max-width: 1240px;
-      min-width: 0;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .docuforge-page .product-detail-grid {
-      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-    }
-
-    .docuforge-page .product-detail-grid > *,
-    .docuforge-page .detail-two-column > *,
-    .docuforge-page .detail-use-grid > * {
-      min-width: 0;
-    }
-
-    /* Centered, responsive demonstration. */
-    #demo {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      padding: 80px 0;
-      background: #ffffff;
-      scroll-margin-top: 100px;
-    }
-
-    #demo > .wrap {
-      display: block;
-      width: calc(100% - 48px);
-      max-width: 1120px;
-      min-width: 0;
-      margin: 0 auto;
-    }
-
-    .demo-intro {
-      max-width: 760px;
-      margin: 0 auto 30px;
-      text-align: center;
-    }
-
-    .demo-intro h2 {
-      margin-bottom: 16px;
-    }
-
-    .demo-intro p {
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.7;
-    }
-
-    #demo .demo-frame {
-      display: block;
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-      min-width: 0;
-      margin: 0 auto;
-      overflow: hidden;
-      border: 1px solid rgba(25, 33, 42, 0.15);
-      border-radius: 14px;
-      background: #19212A;
-      box-shadow: 0 18px 45px rgba(25, 33, 42, 0.12);
-    }
-
-    #demo .demo-frame video {
-      display: block;
-      position: static;
-      width: 100% !important;
-      max-width: 100% !important;
-      min-width: 0 !important;
-      height: auto !important;
-      margin: 0 auto;
-      aspect-ratio: 16 / 9;
-      object-fit: contain;
-      background: #19212A;
-    }
-
-    .demo-note {
-      margin: 18px auto 0;
-      color: #5f686f;
-      font-size: 0.92rem;
-      line-height: 1.6;
-      text-align: center;
-    }
-
-    .demo-direct-link {
-      margin: 10px 0 0;
-      text-align: center;
-      font-size: 0.92rem;
-    }
-
-    .demo-direct-link a {
-      color: #365b5c;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .privacy-panel {
-      margin-top: 30px;
-      padding: 22px 24px;
-      background: #f7f8f7;
-      border-left: 4px solid #5A7E7F;
-      line-height: 1.7;
-    }
-
-    .privacy-panel strong {
-      display: block;
-      margin-bottom: 6px;
-      color: #19212A;
-    }
-
-    .privacy-panel p {
-      margin: 0;
-    }
-
-    @media (max-width: 900px) {
-      .docuforge-page .product-detail-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 32px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .docuforge-page .wrap,
-      #demo > .wrap {
-        width: calc(100% - 32px);
-      }
-
-      #demo {
-        padding: 56px 0;
-      }
-
-      #demo .demo-frame {
-        border-radius: 8px;
-      }
-
-      .privacy-panel {
-        padding: 18px;
-      }
-    }
-  </style>
-</head>
-
-<body class="docuforge-page">
-
-<a class="skip-link" href="#main">
-  Skip to main content
-</a>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-
-    <a class="brand" href="/" aria-label="Farframe home">
-      <img
-        class="brand-symbol"
-        src="/assets/brand/farframe-symbol.svg"
-        width="28"
-        height="24"
-        alt=""
-      >
-      <img
-        class="brand-wordmark"
-        src="/assets/brand/farframe-wordmark.svg"
-        width="112"
-        height="13"
-        alt="Farframe"
-      >
-    </a>
-
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="/products/" aria-current="page">Products</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-      <a class="btn btn--primary btn--header" href="/contact/">
-        Discuss an Operational Challenge
-      </a>
-    </nav>
-
-    <button
-      class="menu-toggle"
-      type="button"
-      aria-label="Open navigation"
-      aria-controls="mobile-navigation"
-      aria-expanded="false"
-    >
-      <span></span>
-    </button>
-
-  </div>
-</header>
-
-<nav
-  class="mobile-nav"
-  id="mobile-navigation"
-  aria-label="Mobile navigation"
-  data-open="false"
-  aria-hidden="true"
->
-  <a href="/products/" aria-current="page">Products</a>
-  <a href="/about/">About</a>
-  <a href="/contact/">Contact</a>
-  <a class="btn btn--primary" href="/contact/">
-    Discuss an Operational Challenge
-  </a>
-</nav>
-
-<main id="main">
-
-  <section class="product-detail-hero">
-    <div class="wrap product-detail-grid">
-
-      <div class="product-detail-copy">
-        <div class="eyebrow mono">
-          DOCUMENT INTELLIGENCE / DOCUFORGE
-        </div>
-
-        <h1>Turn invoice-heavy work into structured business data.</h1>
-
-        <p class="lead">
-          DocuForge is a locally operated document-intelligence system that
-          extracts invoice information, directs uncertain records to human
-          review, identifies purchasing exceptions and produces structured
-          business output.
-        </p>
-
-        <div class="page-actions">
-          <a
-            class="btn btn--primary"
-            href="/contact/?objective=data-extraction"
-          >
-            Discuss a DocuForge Pilot
-          </a>
-
-          <a class="btn btn--secondary" href="#demo">
-            Watch Demonstration
-          </a>
-        </div>
-      </div>
-
-      <div
-        class="product-visual product-visual--docuexcel"
-        data-product-animation
-        aria-label="Animated system model showing documents transformed into structured spreadsheet data"
-        role="img"
-      >
-        <div class="visual-topline mono">
-          <span>DOCUFORGE</span>
-          <span>CONTROLLED EXTRACTION</span>
-        </div>
-
-        <div class="doc-model">
-          <div class="document-stack" aria-hidden="true">
-            <span class="document-page document-page--back"></span>
-            <span class="document-page document-page--mid"></span>
-            <span class="document-page document-page--front">
-              <i></i><i></i><i></i><i></i>
-              <b class="field field--one"></b>
-              <b class="field field--two"></b>
-            </span>
-          </div>
-
-          <div class="data-transfer" aria-hidden="true">
-            <span></span>
-          </div>
-
-          <div class="sheet-output" aria-hidden="true">
-            <div class="sheet-head">
-              <i></i><i></i><i></i>
-            </div>
-            <div class="sheet-row sheet-row--1">
-              <i></i><i></i><i></i>
-            </div>
-            <div class="sheet-row sheet-row--2">
-              <i></i><i></i><i></i>
-            </div>
-            <div class="sheet-row sheet-row--3">
-              <i></i><i></i><i></i>
-            </div>
-            <div class="sheet-row sheet-row--4">
-              <i></i><i></i><i></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="visual-status mono">
-          <span class="status-node"></span>
-          REVIEWABLE OUTPUT · EXCEL EXPORT
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section
-    class="detail-signal-strip"
-    aria-label="DocuForge system principles"
-  >
-    <div class="wrap detail-signal-grid mono">
-      <span>LOCAL PROCESSING</span>
-      <span>HUMAN REVIEW</span>
-      <span>EXCEPTION HANDLING</span>
-      <span>STRUCTURED OUTPUT</span>
-    </div>
-  </section>
-
-  <!-- Kept independent of reveal animations so the player remains visible. -->
-  <section id="demo" aria-labelledby="demo-heading">
-    <div class="wrap">
-
-      <div class="demo-intro">
-        <div class="eyebrow mono">PRODUCT DEMONSTRATION</div>
-
-        <h2 id="demo-heading">See DocuForge in operation.</h2>
-
-        <p>
-          Follow an invoice workflow from document processing and human
-          review through purchasing analysis, purchase-order checks and
-          structured Excel output.
-        </p>
-      </div>
-
-      <div class="demo-frame">
-        <video
-          width="1920"
-          height="1080"
-          controls
-          playsinline
-          preload="metadata"
-          aria-label="DocuForge narrated product demonstration"
-          aria-describedby="demo-description"
-        >
-          <source
-            src="/assets/docuforge-demo-web.mp4"
-            type="video/mp4"
-          >
-
-          Your browser does not support embedded video.
-          <a href="/assets/docuforge-demo-web.mp4">
-            Open the DocuForge demonstration
-          </a>.
-        </video>
-      </div>
-
-      <p class="demo-note" id="demo-description">
-        5 minutes 26 seconds · Demonstration using synthetic manufacturing
-        invoices. No customer or production information is displayed.
-      </p>
-
-      <p class="demo-direct-link">
-        <a
-          href="/assets/docuforge-demo-web.mp4"
-          target="_blank"
-          rel="noopener"
-        >
-          Open video in a separate tab
-        </a>
-      </p>
-
-      <div class="privacy-panel">
-        <strong>Designed for controlled local operation.</strong>
-
-        <p>
-          DocuForge can process and review invoice information within the
-          organization’s own environment without requiring documents to be
-          uploaded to a third-party cloud processing service. The
-          organization retains responsibility for workstation access,
-          backups and data retention.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="block reveal" id="system-flow">
-    <div class="wrap detail-two-column">
-
-      <div class="sticky-copy">
-        <div class="eyebrow mono">SYSTEM FLOW</div>
-
-        <h2>From source invoice to usable output.</h2>
-
-        <p>
-          DocuForge separates extraction, validation, exception review and
-          delivery into clear stages, helping teams retain control over what
-          is captured and what enters downstream workflows.
-        </p>
-      </div>
-
-      <div class="detail-steps">
-
-        <article>
-          <span class="mono">01</span>
-          <div>
-            <h3>Document input</h3>
-            <p>
-              Add selected supplier invoices to a controlled local
-              processing queue.
-            </p>
-          </div>
-        </article>
-
-        <article>
-          <span class="mono">02</span>
-          <div>
-            <h3>Extraction and field identification</h3>
-            <p>
-              Capture invoice fields, totals, purchase-order references and
-              line-item information.
-            </p>
-          </div>
-        </article>
-
-        <article>
-          <span class="mono">03</span>
-          <div>
-            <h3>Review and validation</h3>
-            <p>
-              Surface uncertain fields, duplicate warnings and purchasing
-              exceptions for controlled human review.
-            </p>
-          </div>
-        </article>
-
-        <article>
-          <span class="mono">04</span>
-          <div>
-            <h3>Structured delivery</h3>
-            <p>
-              Produce structured Excel output for further business review
-              and analysis.
-            </p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="block block--white reveal">
-    <div class="wrap detail-use-grid">
-
-      <div class="section-head">
-        <div class="eyebrow mono">OPERATIONAL APPLICATIONS</div>
-        <h2>Designed for controlled invoice operations.</h2>
-      </div>
-
-      <div class="use-card-grid">
-
-        <article>
-          <span class="mono">FINANCE</span>
-          <h3>Invoice extraction and review</h3>
-          <p>
-            Capture supplier, invoice, tax, currency and total information
-            while retaining access to the original document.
-          </p>
-        </article>
-
-        <article>
-          <span class="mono">PURCHASING</span>
-          <h3>Line-item price analysis</h3>
-          <p>
-            Compare repeated purchases and surface significant unit-price
-            changes for commercial review.
-          </p>
-        </article>
-
-        <article>
-          <span class="mono">CONTROL</span>
-          <h3>Purchase-order checks</h3>
-          <p>
-            Identify invoice lines where cumulative billed quantities may
-            exceed the quantities ordered or received.
-          </p>
-        </article>
-
-        <article>
-          <span class="mono">OUTPUT</span>
-          <h3>Structured Excel delivery</h3>
-          <p>
-            Organize captured invoice information into consistent columns
-            for further review and analysis.
-          </p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="final-cta reveal">
-    <div class="wrap final-cta-inner">
-
-      <div class="eyebrow mono">CONTROLLED PILOT</div>
-
-      <h2>Evaluate DocuForge against a defined invoice workflow.</h2>
-
-      <p>
-        A controlled pilot can assess document types, required fields,
-        exception rates, review requirements and output structure using an
-        agreed set of operational criteria.
-      </p>
-
-      <a
-        class="btn btn--primary"
-        href="/contact/?objective=data-extraction"
-      >
-        Discuss a DocuForge Pilot
-      </a>
-
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-
-    <div class="footer-main">
-      <div class="footer-identity">
-
-        <a class="footer-brand" href="/" aria-label="Farframe home">
-          <img
-            class="footer-symbol"
-            src="/assets/brand/farframe-symbol-reversed.svg"
-            width="27"
-            height="23"
-            alt=""
-          >
-          <img
-            class="footer-wordmark"
-            src="/assets/brand/farframe-wordmark-reversed.svg"
-            width="108"
-            height="12"
-            alt="Farframe"
-          >
-        </a>
-
-        <div class="footer-tagline">Engineered for Impact.</div>
-      </div>
-
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="/products/">Products</a>
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
-        <a href="/privacy/">Privacy</a>
-      </nav>
-    </div>
-
-    <div class="footer-legal">
-      Farframe Inc. · Ontario, Canada · © 2026 Farframe Inc.
-    </div>
-
-  </div>
-</footer>
-
-<script src="/assets/js/site.js" defer></script>
-
-</body>
-</html>
+/* ==========================================================
+   DOCUFORGE PRODUCT PAGE
+   Centered video, responsive layout and demonstration styling
+   ========================================================== */
+
+body.docuforge-page {
+  margin: 0;
+  min-width: 0;
+}
+
+.docuforge-page,
+.docuforge-page *,
+.docuforge-page *::before,
+.docuforge-page *::after {
+  box-sizing: border-box;
+}
+
+.docuforge-page main {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.docuforge-page .wrap {
+  width: calc(100% - 48px);
+  max-width: 1240px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.docuforge-page .product-detail-grid {
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+}
+
+.docuforge-page .product-detail-grid > *,
+.docuforge-page .detail-two-column > *,
+.docuforge-page .detail-use-grid > * {
+  min-width: 0;
+}
+
+/* Demonstration section */
+
+#demo {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 80px 0;
+  margin: 0;
+  background: #ffffff;
+  scroll-margin-top: 100px;
+  box-sizing: border-box;
+}
+
+#demo > .wrap {
+  display: block;
+  width: calc(100% - 48px);
+  max-width: 1120px;
+  min-width: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Centered heading and introduction */
+
+#demo .demo-intro {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+#demo .demo-intro h2 {
+  margin-bottom: 16px;
+}
+
+#demo .demo-intro p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* Video frame */
+
+#demo .demo-frame {
+  display: block;
+  position: relative;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(25, 33, 42, 0.15);
+  border-radius: 14px;
+  background: #19212A;
+  box-shadow: 0 18px 45px rgba(25, 33, 42, 0.12);
+  box-sizing: border-box;
+}
+
+/* Override the video's original 1920-pixel dimensions */
+
+#demo video {
+  display: block !important;
+  position: static !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  padding: 0;
+  border: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #19212A;
+  box-sizing: border-box;
+}
+
+/* Supporting text */
+
+#demo .demo-note {
+  margin: 18px auto 0;
+  color: #5f686f;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+#demo .demo-direct-link {
+  margin: 10px 0 0;
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+#demo .demo-direct-link a {
+  color: #365b5c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Local processing information */
+
+#demo .privacy-panel {
+  margin-top: 30px;
+  padding: 22px 24px;
+  background: #f7f8f7;
+  border-left: 4px solid #5A7E7F;
+  line-height: 1.7;
+}
+
+#demo .privacy-panel strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #19212A;
+}
+
+#demo .privacy-panel p {
+  margin: 0;
+}
+
+/* Tablet layout */
+
+@media (max-width: 900px) {
+  .docuforge-page .product-detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+  .docuforge-page .wrap,
+  #demo > .wrap {
+    width: calc(100% - 32px);
+  }
+
+  #demo {
+    padding: 48px 0;
+  }
+
+  #demo .demo-intro {
+    margin-bottom: 22px;
+  }
+
+  #demo .demo-frame {
+    border-radius: 8px;
+  }
+
+  #demo .privacy-panel {
+    padding: 18px;
+  }
+}
