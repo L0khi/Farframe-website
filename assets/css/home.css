@@ -1,0 +1,11 @@
+
+    /* Keep every label inside the teal Operational Outputs stripe white. */
+    .plane--three .system-label,
+    .plane--three .system-label strong,
+    .plane--three .system-label span,
+    .system-label--output,
+    .system-label--output strong,
+    .system-label--output span {
+      color: #ffffff !important;
+    }
+  
