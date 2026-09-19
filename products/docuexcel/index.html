@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 
   <link
     rel="canonical"
-    href="https://farframe.ca/products/docuexcel/"
+    href="https://farframe.ca/products/docuforge/"
   >
 
   <link
@@ -32,183 +32,11 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="/assets/css/styles.css?v=20260919-restored">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20260919-rename">
 
-  <style>
-    /* Page-specific sizing: prevent wide content from expanding the layout. */
-    .docuforge-page,
-    .docuforge-page *,
-    .docuforge-page *::before,
-    .docuforge-page *::after {
-      box-sizing: border-box;
-    }
-
-    .docuforge-page {
-      margin: 0;
-      min-width: 0;
-    }
-
-    .docuforge-page main {
-      display: block;
-      width: 100%;
-      min-width: 0;
-    }
-
-    .docuforge-page .wrap {
-      width: calc(100% - 48px);
-      max-width: 1240px;
-      min-width: 0;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .docuforge-page .product-detail-grid {
-      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-    }
-
-    .docuforge-page .product-detail-grid > *,
-    .docuforge-page .detail-two-column > *,
-    .docuforge-page .detail-use-grid > * {
-      min-width: 0;
-    }
-
-    /* Centered, responsive demonstration. */
-    #demo {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      padding: 64px 0;
-      background: #ffffff;
-      scroll-margin-top: 100px;
-    }
-
-    #demo > .wrap {
-      display: block;
-      width: calc(100% - 48px);
-      max-width: 1040px;
-      min-width: 0;
-      margin: 0 auto;
-    }
-
-    .demo-intro {
-      max-width: 760px;
-      margin: 0 auto 26px;
-      text-align: center;
-    }
-
-    .demo-intro h2 {
-      margin-bottom: 16px;
-    }
-
-    .demo-intro p {
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.7;
-    }
-
-    #demo .demo-intro .eyebrow { justify-content: center; }
-    #demo .demo-intro h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); }
-    #demo .demo-intro p { font-size: 1rem; color: #66717a; }
-
-    #demo .demo-frame {
-      display: block;
-      position: relative;
-      width: 100%;
-      max-width: 880px;
-      max-width: min(880px, 110svh);
-      min-width: 0;
-      margin: 0 auto;
-      overflow: hidden;
-      border: 1px solid rgba(25, 33, 42, 0.15);
-      border-radius: 14px;
-      background: #19212A;
-      box-shadow: 0 12px 32px rgba(25, 33, 42, 0.09);
-    }
-
-    #demo .demo-frame video {
-      display: block;
-      position: static;
-      width: 100% !important;
-      max-width: 100% !important;
-      min-width: 0 !important;
-      height: auto !important;
-      margin: 0 auto;
-      aspect-ratio: 16 / 9;
-      object-fit: contain;
-      background: #19212A;
-    }
-
-    .demo-note {
-      margin: 18px auto 0;
-      color: #5f686f;
-      font-size: 0.92rem;
-      line-height: 1.6;
-      text-align: center;
-    }
-
-    .demo-direct-link {
-      margin: 10px 0 0;
-      text-align: center;
-      font-size: 0.92rem;
-    }
-
-    .demo-direct-link a {
-      color: #365b5c;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .privacy-panel {
-      max-width: 880px;
-      margin: 28px auto 0;
-      padding: 20px 24px;
-      border-radius: 6px;
-      background: #f7f8f7;
-      border-left: 4px solid #5A7E7F;
-      line-height: 1.7;
-    }
-
-    .privacy-panel strong {
-      display: block;
-      margin-bottom: 6px;
-      color: #19212A;
-    }
-
-    .privacy-panel p {
-      margin: 0;
-    }
-
-    @media (max-width: 900px) {
-      .docuforge-page .product-detail-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 32px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .docuforge-page .wrap,
-      #demo > .wrap {
-        width: calc(100% - 32px);
-      }
-
-      #demo {
-        padding: 56px 0;
-      }
-
-      #demo .demo-intro .eyebrow { justify-content: center; }
-    #demo .demo-intro h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); }
-    #demo .demo-intro p { font-size: 1rem; color: #66717a; }
-
-    #demo .demo-frame {
-        border-radius: 8px;
-      }
-
-      .privacy-panel {
-        padding: 18px;
-      }
-    }
-  </style>
+  
+  <link rel="stylesheet" href="/assets/css/docuforge.css?v=20260919-rename">
+<link rel="stylesheet" href="/assets/css/inline-docuforge.css">
 </head>
 
 <body class="docuforge-page">
@@ -308,7 +136,7 @@
       </div>
 
       <div
-        class="product-visual product-visual--docuexcel"
+        class="product-visual product-visual--docuforge"
         data-product-animation
         aria-label="Animated system model showing documents transformed into structured spreadsheet data"
         role="img"
@@ -389,11 +217,11 @@
         </p>
       </div>
 
-      <div class="demo-frame" style="width:100%;max-width:880px;max-width:min(880px,110svh);margin-inline:auto">
+      <div class="demo-frame" data-page-style="1">
         <video
           width="880"
           height="495"
-          style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:contain"
+          data-page-style="2"
           controls
           playsinline
           preload="metadata"
