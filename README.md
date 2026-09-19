@@ -6,8 +6,8 @@ Static multi-page site prepared for GitHub and Netlify.
 
 - `/` — Home
 - `/products/` — Product portfolio
-- `/products/docuexcel/` — Dedicated DocuExcel page
-- `/products/inventory-sentinel/` — Dedicated Inventory Sentinel page
+- `/products/docuforge/` — Dedicated DocuForge page
+- `/products/fartrack/` — Dedicated Fartrack page
 - `/about/` — About Farframe
 - `/contact/` — Netlify contact form
 - `/privacy/` — Privacy notice
@@ -20,7 +20,7 @@ The approved Illustrator source was converted into cropped, lightweight web asse
 
 ## Product demonstrations
 
-DocuExcel and Inventory Sentinel currently use CSS-based system animations. Each dedicated product page contains an HTML comment identifying the exact animation block that can later be replaced with a self-hosted video, GIF, or interactive demo.
+DocuForge and Fartrack currently use CSS-based system animations. Each dedicated product page contains an HTML comment identifying the exact animation block that can later be replaced with a self-hosted video, GIF, or interactive demo.
 
 ## Netlify
 

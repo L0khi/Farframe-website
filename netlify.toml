@@ -14,3 +14,15 @@
   from = "/home"
   to = "/"
   status = 301
+
+[[redirects]]
+  from = "/products/docuexcel/*"
+  to = "/products/docuforge/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/inventory-sentinel/*"
+  to = "/products/fartrack/:splat"
+  status = 301
+  force = true

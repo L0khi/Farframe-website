@@ -1,0 +1,9 @@
+FARFRAME WEBSITE — DocuForge + Fartrack
+
+Copy the contents of this folder into the root of your Farframe-website repository, replacing matching files and retaining all subfolders. Commit the changes and wait for deployment. Refresh with Ctrl+F5.
+
+New product URLs: /products/docuforge/ and /products/fartrack/.
+Old product URLs redirect to the new pages.
+Includes the restored shared stylesheet, responsive DocuForge video layout, existing video and brand assets. Page styles are external files compatible with the existing security policy.
+
+The included MP4 is unchanged; baked-in video text is not edited by a website text rename.
