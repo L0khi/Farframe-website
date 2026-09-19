@@ -1,197 +1,331 @@
-/* ==========================================================
-   DOCUFORGE PRODUCT PAGE
-   Centered video, responsive layout and demonstration styling
-   ========================================================== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-body.docuforge-page {
-  margin: 0;
-  min-width: 0;
-}
+  <title>DocuForge | Farframe Document Intelligence</title>
 
-.docuforge-page,
-.docuforge-page *,
-.docuforge-page *::before,
-.docuforge-page *::after {
-  box-sizing: border-box;
-}
+  <meta
+    name="description"
+    content="DocuForge turns invoices into structured, reviewable business data through local processing, human review, purchasing checks and Excel export."
+  >
+  <meta name="theme-color" content="#19212A">
 
-.docuforge-page main {
-  display: block;
-  width: 100%;
-  min-width: 0;
-}
+  <link
+    rel="canonical"
+    href="https://farframe.ca/products/docuexcel/"
+  >
 
-.docuforge-page .wrap {
-  width: calc(100% - 48px);
-  max-width: 1240px;
-  min-width: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
+  <link
+    rel="icon"
+    href="/assets/brand/farframe-favicon.svg"
+    type="image/svg+xml"
+  >
 
-.docuforge-page .product-detail-grid {
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.docuforge-page .product-detail-grid > *,
-.docuforge-page .detail-two-column > *,
-.docuforge-page .detail-use-grid > * {
-  min-width: 0;
-}
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap"
+    rel="stylesheet"
+  >
 
-/* Demonstration section */
+  <!-- This page uses its own stylesheet. -->
+  <link rel="stylesheet" href="/assets/css/docuforge.css?v=1">
+</head>
 
-#demo {
-  display: block;
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  padding: 80px 0;
-  margin: 0;
-  background: #ffffff;
-  scroll-margin-top: 100px;
-  box-sizing: border-box;
-}
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-#demo > .wrap {
-  display: block;
-  width: calc(100% - 48px);
-  max-width: 1120px;
-  min-width: 0;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Farframe home">
+        FARFRAME
+      </a>
 
-/* Centered heading and introduction */
+      <nav class="navigation" aria-label="Primary navigation">
+        <a href="/products/">Products</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-#demo .demo-intro {
-  max-width: 760px;
-  margin: 0 auto 30px;
-  text-align: center;
-}
+  <main id="main">
+    <section class="hero" aria-labelledby="product-title">
+      <div class="container">
+        <p class="eyebrow">FARFRAME / DOCUMENT INTELLIGENCE</p>
 
-#demo .demo-intro h2 {
-  margin-bottom: 16px;
-}
+        <h1 id="product-title">DocuForge</h1>
 
-#demo .demo-intro p {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.7;
-}
+        <p class="headline">
+          Turn invoice-heavy work into structured business data.
+        </p>
 
-/* Video frame */
+        <p class="lead">
+          Extract invoice information, review uncertain fields,
+          identify purchasing exceptions and export structured
+          records within a controlled local workflow.
+        </p>
 
-#demo .demo-frame {
-  display: block;
-  position: relative;
-  float: none;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid rgba(25, 33, 42, 0.15);
-  border-radius: 14px;
-  background: #19212A;
-  box-shadow: 0 18px 45px rgba(25, 33, 42, 0.12);
-  box-sizing: border-box;
-}
+        <div class="actions">
+          <a class="button button-primary" href="#demo">
+            Watch Demonstration
+          </a>
 
-/* Override the video's original 1920-pixel dimensions */
+          <a
+            class="button button-secondary"
+            href="/contact/?objective=data-extraction"
+          >
+            Discuss a Pilot
+          </a>
+        </div>
+      </div>
+    </section>
 
-#demo video {
-  display: block !important;
-  position: static !important;
-  float: none !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  height: auto !important;
-  margin: 0 auto !important;
-  padding: 0;
-  border: 0;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-  background: #19212A;
-  box-sizing: border-box;
-}
+    <div class="principles">
+      <ul class="container" aria-label="System principles">
+        <li>Local processing</li>
+        <li>Human review</li>
+        <li>Exception handling</li>
+        <li>Excel output</li>
+      </ul>
+    </div>
 
-/* Supporting text */
+    <section class="section demo" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">PRODUCT DEMONSTRATION</p>
 
-#demo .demo-note {
-  margin: 18px auto 0;
-  color: #5f686f;
-  font-size: 0.92rem;
-  line-height: 1.6;
-  text-align: center;
-}
+          <h2 id="demo-title">See DocuForge in operation.</h2>
 
-#demo .demo-direct-link {
-  margin: 10px 0 0;
-  font-size: 0.92rem;
-  text-align: center;
-}
+          <p>
+            Follow an invoice workflow from document processing
+            and human review through purchasing checks and
+            structured Excel output.
+          </p>
+        </div>
 
-#demo .demo-direct-link a {
-  color: #365b5c;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
+        <div class="video-frame">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            width="960"
+            height="540"
+            aria-label="DocuForge product demonstration"
+            aria-describedby="demo-description"
+          >
+            <source
+              src="/assets/docuforge-demo-web.mp4"
+              type="video/mp4"
+            >
 
-/* Local processing information */
+            Your browser does not support embedded video.
+            <a href="/assets/docuforge-demo-web.mp4">
+              Open the demonstration.
+            </a>
+          </video>
+        </div>
 
-#demo .privacy-panel {
-  margin-top: 30px;
-  padding: 22px 24px;
-  background: #f7f8f7;
-  border-left: 4px solid #5A7E7F;
-  line-height: 1.7;
-}
+        <p class="video-note" id="demo-description">
+          Recorded product demonstration: invoice processing,
+          review, purchasing analysis and export.
+        </p>
 
-#demo .privacy-panel strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #19212A;
-}
+        <p class="video-link">
+          <a
+            href="/assets/docuforge-demo-web.mp4"
+            target="_blank"
+            rel="noopener"
+          >
+            Open the video in a separate tab
+          </a>
+        </p>
 
-#demo .privacy-panel p {
-  margin: 0;
-}
+        <aside class="local-panel" aria-labelledby="local-title">
+          <h3 id="local-title">
+            Designed for controlled local operation.
+          </h3>
 
-/* Tablet layout */
+          <p>
+            DocuForge supports processing and reviewing invoices
+            within your organization’s own environment.
+            Access permissions, backups and data retention remain
+            part of your organization’s operating procedures.
+          </p>
+        </aside>
+      </div>
+    </section>
 
-@media (max-width: 900px) {
-  .docuforge-page .product-detail-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 32px;
-  }
-}
+    <section class="section tinted" aria-labelledby="workflow-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">SYSTEM FLOW</p>
 
-/* Mobile layout */
+          <h2 id="workflow-title">
+            From source invoice to usable output.
+          </h2>
 
-@media (max-width: 600px) {
-  .docuforge-page .wrap,
-  #demo > .wrap {
-    width: calc(100% - 32px);
-  }
+          <p>
+            Processing, review and delivery are separate stages,
+            helping your team check information before using it.
+          </p>
+        </div>
 
-  #demo {
-    padding: 48px 0;
-  }
+        <ol class="workflow">
+          <li>
+            <span class="step-number" aria-hidden="true">01</span>
 
-  #demo .demo-intro {
-    margin-bottom: 22px;
-  }
+            <h3>Add documents</h3>
 
-  #demo .demo-frame {
-    border-radius: 8px;
-  }
+            <p>
+              Add supplier invoices to the local processing queue.
+              Keep source documents available for reference.
+            </p>
+          </li>
 
-  #demo .privacy-panel {
-    padding: 18px;
-  }
-}
+          <li>
+            <span class="step-number" aria-hidden="true">02</span>
+
+            <h3>Extract information</h3>
+
+            <p>
+              Capture invoice fields, totals, purchase-order
+              references and line-item information.
+            </p>
+          </li>
+
+          <li>
+            <span class="step-number" aria-hidden="true">03</span>
+
+            <h3>Review exceptions</h3>
+
+            <p>
+              Check uncertain fields, duplicate warnings and
+              purchasing exceptions against source documents.
+            </p>
+          </li>
+
+          <li>
+            <span class="step-number" aria-hidden="true">04</span>
+
+            <h3>Export records</h3>
+
+            <p>
+              Produce structured Excel output for further
+              business review and analysis.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="applications-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OPERATIONAL APPLICATIONS</p>
+
+          <h2 id="applications-title">
+            Support everyday invoice operations.
+          </h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <p class="eyebrow">FINANCE</p>
+
+            <h3>Invoice extraction and review</h3>
+
+            <p>
+              Capture supplier, invoice, tax, currency and total
+              information while retaining access to the original
+              document.
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="eyebrow">PURCHASING</p>
+
+            <h3>Line-item price analysis</h3>
+
+            <p>
+              Compare repeated purchases and surface unit-price
+              changes for commercial review.
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="eyebrow">CONTROL</p>
+
+            <h3>Purchase-order checks</h3>
+
+            <p>
+              Identify invoice lines where cumulative billed
+              quantities may exceed quantities ordered or received.
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="eyebrow">OUTPUT</p>
+
+            <h3>Structured Excel delivery</h3>
+
+            <p>
+              Organize invoice information into consistent columns
+              for review, reporting and further analysis.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" aria-labelledby="pilot-title">
+      <div class="container">
+        <p class="eyebrow">CONTROLLED PILOT</p>
+
+        <h2 id="pilot-title">
+          Evaluate DocuForge against your invoice workflow.
+        </h2>
+
+        <p class="cta-description">
+          Define the document types, required fields, review
+          requirements and output structure. Assess the results
+          against an agreed set of operational criteria.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="/contact/?objective=data-extraction"
+        >
+          Discuss a DocuForge Pilot
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="/" aria-label="Farframe home">
+          FARFRAME
+        </a>
+
+        <p>Engineered for Impact.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/products/">Products</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+
+      <p class="copyright">
+        © 2026 Farframe Inc. · Ontario, Canada
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
