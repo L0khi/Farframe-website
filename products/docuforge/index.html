@@ -37,6 +37,18 @@
   
   <link rel="stylesheet" href="/assets/css/docuforge.css?v=20260919-rename">
 <link rel="stylesheet" href="/assets/css/inline-docuforge.css">
+
+  <style>
+    /* Video presentation: self-contained so no other stylesheet needs editing. */
+    .docuforge-page .demo-video-section { margin-top: 2rem; }
+    .docuforge-page .demo-video-section--full { margin-top: 3.75rem; padding-top: 3rem; border-top: 1px solid #dce2e1; }
+    .docuforge-page .demo-video-section h3 { font-size: clamp(1.35rem, 2.5vw, 1.9rem); line-height: 1.25; margin: .75rem 0; }
+    .docuforge-page .demo-video-summary { max-width: 760px; margin: 0 0 1.5rem; }
+    .docuforge-page .demo-video-section .demo-frame video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #111; }
+    @media (max-width: 640px) {
+      .docuforge-page .demo-video-section--full { margin-top: 2.5rem; padding-top: 2rem; }
+    }
+  </style>
 </head>
 
 <body class="docuforge-page">
@@ -201,72 +213,53 @@
     </div>
   </section>
 
-  <!-- Kept independent of reveal animations so the player remains visible. -->
+  <!-- Both video players stay independent of scroll reveal animations. -->
   <section id="demo" aria-labelledby="demo-heading">
     <div class="wrap">
-
       <div class="demo-intro">
         <div class="eyebrow mono">PRODUCT DEMONSTRATION</div>
-
         <h2 id="demo-heading">See DocuForge in operation.</h2>
-
-        <p>
-          Follow an invoice workflow from document processing and human
-          review through purchasing analysis, purchase-order checks and
-          structured Excel output.
-        </p>
+        <p>Start with a one-minute overview, then explore the full invoice-processing workflow.</p>
       </div>
 
-      <div class="demo-frame" data-page-style="1">
-        <video
-          width="880"
-          height="495"
-          data-page-style="2"
-          controls
-          playsinline
-          preload="metadata"
-          aria-label="DocuForge narrated product demonstration"
-          aria-describedby="demo-description"
-        >
-          <source
-            src="/assets/docuforge-demo-web.mp4"
-            type="video/mp4"
-          >
-
-          Your browser does not support embedded video.
-          <a href="/assets/docuforge-demo-web.mp4">
-            Open the DocuForge demonstration
-          </a>.
-        </video>
+      <div class="demo-video-section" aria-labelledby="quick-demo-heading">
+        <div class="eyebrow mono">01 / QUICK OVERVIEW · 1 MINUTE</div>
+        <h3 id="quick-demo-heading">DocuForge in 60 seconds.</h3>
+        <p class="demo-video-summary">A quick introduction to document extraction, human review, purchasing checks and Excel export.</p>
+        <div class="demo-frame">
+          <video width="880" height="495" controls playsinline preload="metadata"
+                 aria-label="DocuForge 60-second quick overview"
+                 aria-describedby="quick-demo-description">
+            <source src="/assets/docuforge-quick-overview.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+            <a href="/assets/docuforge-quick-overview.mp4">Open the quick overview</a>.
+          </video>
+        </div>
+        <p class="demo-note" id="quick-demo-description">1 minute · Quick product overview.</p>
+        <p class="demo-direct-link"><a href="/assets/docuforge-quick-overview.mp4" target="_blank" rel="noopener">Open quick overview in a separate tab</a></p>
       </div>
 
-      <p class="demo-note" id="demo-description">
-        5 minutes 53 seconds · Demonstration using synthetic manufacturing
-        invoices. No customer or production information is displayed.
-      </p>
-
-      <p class="demo-direct-link">
-        <a
-          href="/assets/docuforge-demo-web.mp4"
-          target="_blank"
-          rel="noopener"
-        >
-          Open video in a separate tab
-        </a>
-      </p>
+      <div class="demo-video-section demo-video-section--full" aria-labelledby="full-demo-heading">
+        <div class="eyebrow mono">02 / FULL PRODUCT WALKTHROUGH · 5 MIN 53 SEC</div>
+        <h3 id="full-demo-heading">Explore the complete workflow.</h3>
+        <p class="demo-video-summary">Follow invoice processing and human review through purchasing analysis, purchase-order checks and structured Excel output.</p>
+        <div class="demo-frame">
+          <video width="880" height="495" controls playsinline preload="metadata"
+                 aria-label="DocuForge full narrated product walkthrough"
+                 aria-describedby="demo-description">
+            <source src="/assets/docuforge-demo-web.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+            <a href="/assets/docuforge-demo-web.mp4">Open the full walkthrough</a>.
+          </video>
+        </div>
+        <p class="demo-note" id="demo-description">5 minutes 53 seconds · Demonstration using synthetic manufacturing invoices. No customer or production information is displayed.</p>
+        <p class="demo-direct-link"><a href="/assets/docuforge-demo-web.mp4" target="_blank" rel="noopener">Open full walkthrough in a separate tab</a></p>
+      </div>
 
       <div class="privacy-panel">
         <strong>Designed for controlled local operation.</strong>
-
-        <p>
-          DocuForge can process and review invoice information within the
-          organization’s own environment without requiring documents to be
-          uploaded to a third-party cloud processing service. The
-          organization retains responsibility for workstation access,
-          backups and data retention.
-        </p>
+        <p>DocuForge can process and review invoice information within the organization’s own environment without requiring documents to be uploaded to a third-party cloud processing service. The organization retains responsibility for workstation access, backups and data retention.</p>
       </div>
-
     </div>
   </section>
 
