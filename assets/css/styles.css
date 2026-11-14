@@ -2615,3 +2615,43 @@ h3 {
   }
 }
 
+
+
+/* ---- November 2026 refresh: status tags, delivery grid ---- */
+.status-tag {
+  display: inline-block;
+  padding: 4px 9px;
+  border: 1px solid var(--ff-grey-frame);
+  border-radius: var(--radius);
+  color: var(--ff-grey-steel);
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.status-tag--live {
+  border-color: var(--ff-teal-interface);
+  background: var(--ff-teal-interface);
+  color: var(--ff-white);
+}
+.system-category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.status-line { margin: -6px 0 18px; }
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--ff-grey-foundation);
+  background: var(--ff-grey-foundation);
+}
+.delivery-grid .story-card { min-height: 0; }
+.delivery-grid .story-card .mono { margin-bottom: 32px; }
+.delivery-grid .story-card a { color: var(--ff-teal-interface); }
+@media (max-width: 800px) {
+  .delivery-grid { grid-template-columns: 1fr; }
+}
