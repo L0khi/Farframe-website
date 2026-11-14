@@ -7,7 +7,7 @@ Static multi-page site prepared for GitHub and Netlify.
 - `/` — Home
 - `/products/` — Product portfolio
 - `/products/docuforge/` — Dedicated DocuForge page
-- `/products/fartrace/` — Dedicated Fartrace page
+- `/products/opsfield/` — Dedicated Opsfield page
 - `/about/` — About Farframe
 - `/contact/` — Netlify contact form
 - `/privacy/` — Privacy notice
@@ -20,7 +20,7 @@ The approved Illustrator source was converted into cropped, lightweight web asse
 
 ## Product demonstrations
 
-DocuForge and Fartrace currently use CSS-based system animations. Each dedicated product page contains an HTML comment identifying the exact animation block that can later be replaced with a self-hosted video, GIF, or interactive demo.
+DocuForge and Opsfield currently use CSS-based system animations. Each dedicated product page contains an HTML comment identifying the exact animation block that can later be replaced with a self-hosted video, GIF, or interactive demo.
 
 ## Netlify
 
