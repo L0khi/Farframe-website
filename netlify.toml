@@ -23,6 +23,12 @@
 
 [[redirects]]
   from = "/products/inventory-sentinel/*"
-  to = "/products/fartrack/:splat"
+  to = "/products/fartrace/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/fartrack/*"
+  to = "/products/fartrace/:splat"
   status = 301
   force = true
