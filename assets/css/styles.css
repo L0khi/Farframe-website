@@ -2655,3 +2655,54 @@ h3 {
 @media (max-width: 800px) {
   .delivery-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ---- Copy tightening: hero points, CTA points, worked example ---- */
+.hero-points {
+  max-width: 680px;
+  margin: 0 0 34px;
+  padding: 0;
+  list-style: none;
+  color: var(--ff-grey-steel);
+  font-size: clamp(1.05rem, 1.5vw, 1.16rem);
+  line-height: 1.5;
+}
+.hero-points li {
+  position: relative;
+  padding: 9px 0 9px 22px;
+  border-top: 1px solid var(--ff-grey-foundation);
+}
+.hero-points li:last-child { border-bottom: 1px solid var(--ff-grey-foundation); }
+.hero-points li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1.05em;
+  width: 7px;
+  height: 7px;
+  background: var(--ff-teal-interface);
+  transform: rotate(45deg);
+}
+.hero-points strong { color: var(--ff-navy); font-weight: 600; }
+.cta-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  margin: 0 0 34px;
+  padding: 0;
+  list-style: none;
+  color: var(--ff-grey-steel);
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+}
+.demo-offer { margin-top: 14px; color: var(--ff-grey-steel); }
+.delivery-grid--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.example-note {
+  margin-top: 18px;
+  color: var(--ff-grey-steel);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  line-height: 1.7;
+}
+@media (max-width: 1040px) { .delivery-grid--four { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 800px) { .delivery-grid--four { grid-template-columns: 1fr; } }

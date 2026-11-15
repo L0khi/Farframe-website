@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=20261114-opsfield">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261114-tighten">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -45,7 +45,7 @@
         <h1>Connect physical material reality with operational records.</h1>
         <p class="lead">Opsfield is designed to improve awareness of material location, movement, count discrepancies, and exceptions across receiving, storage, and production environments.</p>
         <div class="page-actions">
-          <a class="btn btn--primary" href="/contact/?objective=inventory">Request a Opsfield Demo</a>
+          <a class="btn btn--primary" href="/contact/?objective=inventory">Request an Opsfield Demo</a>
           <a class="btn btn--secondary" href="#system-flow">View System Flow</a>
         </div>
       </div>
@@ -83,7 +83,7 @@
         <p>Opsfield is structured to observe defined operational areas, compare physical activity with expected states, and direct attention where review is needed.</p>
       </div>
       <div class="detail-steps">
-        <article><span class="mono">01</span><div><h3>Observe</h3><p>Collect agreed visual or operational signals within a contained material workflow.</p></div></article>
+        <article><span class="mono">01</span><div><h3>Observe</h3><p>Capture tag reads with a handheld RFID sweep of a defined area. Fixed readers can be added later.</p></div></article>
         <article><span class="mono">02</span><div><h3>Identify</h3><p>Associate material, location, movement, or count events with structured records.</p></div></article>
         <article><span class="mono">03</span><div><h3>Compare</h3><p>Check physical states against expected locations, transactions, or ERP information.</p></div></article>
         <article><span class="mono">04</span><div><h3>Surface</h3><p>Present meaningful discrepancies for human review, correction, and accountability.</p></div></article>
@@ -91,7 +91,23 @@
     </div>
   </section>
 
-  <section class="block block--white reveal">
+  <section class="block block--white reveal" id="example">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow mono">WORKED EXAMPLE</div>
+        <h2>One item, one disagreement, one decision.</h2>
+      </div>
+      <div class="delivery-grid delivery-grid--four">
+        <article class="story-card"><span class="mono">01 / EXPECTED</span><h3>Record says A3</h3><p>The inventory record places item MX-204 in rack location A3.</p></article>
+        <article class="story-card"><span class="mono">02 / OBSERVED</span><h3>Tag read in B2</h3><p>The item’s tag is read in location B2, not A3.</p></article>
+        <article class="story-card"><span class="mono">03 / SOURCE</span><h3>Handheld RFID sweep</h3><p>An operator walks the aisle with a handheld reader. Opsfield logs each tag against the location swept.</p></article>
+        <article class="story-card"><span class="mono">04 / OPERATOR VIEW</span><h3>Exception raised</h3><p>“MX-204: expected A3, found B2.” The operator confirms the move or corrects the record, and the status returns to verified.</p></article>
+      </div>
+      <p class="example-note mono">ILLUSTRATIVE EXAMPLE · DEMONSTRATIONS RUN ON SIMULATED SCAN DATA · READER HARDWARE IS SPECIFIED PER DEPLOYMENT</p>
+    </div>
+  </section>
+
+  <section class="block reveal">
     <div class="wrap detail-use-grid">
       <div class="section-head">
         <div class="eyebrow mono">PROBLEMS ADDRESSED</div>
@@ -111,8 +127,8 @@
     <div class="wrap final-cta-inner">
       <div class="eyebrow mono">DEFINE THE MATERIAL FLOW</div>
       <h2>Start with one contained visibility problem.</h2>
-      <p>Describe the materials, locations, current records, and operational exceptions. Farframe will demonstrate Opsfield against that scenario, remotely or on site, and assess a focused deployment.</p>
-      <a class="btn btn--primary" href="/contact/?objective=inventory">Request a Opsfield Demo</a>
+      <p>Describe the materials, locations, and records involved. Farframe will demonstrate Opsfield against that scenario.</p>
+      <a class="btn btn--primary" href="/contact/?objective=inventory">Request an Opsfield Demo</a>
     </div>
   </section>
 </main>
@@ -136,6 +152,6 @@
     <div class="footer-legal">Farframe Inc. · Ontario, Canada · Serving operations across Canada · © 2026 Farframe Inc.</div>
   </div>
 </footer>
-<script src="/assets/js/site.js?v=20261114-opsfield" defer></script>
+<script src="/assets/js/site.js?v=20261114-tighten" defer></script>
 </body>
 </html>
