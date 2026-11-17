@@ -20,7 +20,7 @@ The approved Illustrator source was converted into cropped, lightweight web asse
 
 ## Product demonstrations
 
-Both product pages keep their CSS-based system animation in the hero and carry self-hosted demo videos in a `#demo` section. DocuForge: `assets/docuforge-quick-overview.mp4` and `assets/docuforge-demo-web.mp4`. Opsfield: `assets/opsfield-demo.mp4` (30 seconds), styled by `assets/css/opsfield.css`. Videos must live in `assets/`: the Content-Security-Policy in `netlify.toml` blocks media from other hosts.
+Both product pages keep their CSS-based system animation in the hero and carry self-hosted demo videos in a `#demo` section. DocuForge: `assets/docuforge-quick-overview.mp4` and `assets/docuforge-demo-web.mp4`. Opsfield: `assets/opsfield-demo.mp4` (42 seconds), styled by `assets/css/opsfield.css`. Videos must live in `assets/`: the Content-Security-Policy in `netlify.toml` blocks media from other hosts.
 
 ## Netlify
 
